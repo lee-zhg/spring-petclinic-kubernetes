@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: customers
@@ -7,6 +7,9 @@ metadata:
 spec:
   strategy:
     type: Recreate
+  selector:
+    matchLabels:
+      app: spring-petclinic
   template:
     metadata:
       labels:
@@ -37,3 +40,5 @@ spec:
                 key: password
           - name: spring.profiles.active
             value: mysql
+          - name: MYSQL_DATABASE
+            value: petclinic
