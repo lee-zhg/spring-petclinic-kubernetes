@@ -6,7 +6,7 @@ metadata:
   name: api-ingress
 spec:
   rules:
-  - host: petclinic.leez-iks01-2bef1f4b4097001da9502000c44fc2b2-0000.us-south.containers.appdomain.cloud
+  - host: petclinic.leez-iks05-dc-2bef1f4b4097001da9502000c44fc2b2-0000.us-east.containers.appdomain.cloud
     http:
       paths:
       - path: /(.*)

@@ -20,7 +20,7 @@ spec:
         tier: customers
     spec:
       containers:
-        - image: hongjs/spring-petclinic-customers-service:latest
+        - image: leezhang/spring-petclinic-customers-service:latest
           imagePullPolicy: Always
           name: customers
           ports:
